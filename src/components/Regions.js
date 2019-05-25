@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 export class Regions extends Component {
   onSelectRegion = (e, region) => {
     e.preventDefault();
@@ -8,7 +9,7 @@ export class Regions extends Component {
 
   render() {
     return (
-      <div className="col s12 m6 l3">
+      <div className="col s12 m6 l4 offset-m3 offset-l4">
         <h2 className="center-align">Regions</h2>
         <div className="collection">
           {this.props.regions.map(region => (
@@ -27,3 +28,4 @@ export class Regions extends Component {
     );
   }
 }
+

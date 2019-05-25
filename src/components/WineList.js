@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {Loader} from '.';
+import * as WinesService from '../services/Wines';
 
 export class WineList extends Component {
   onSelectWine = (e, wineId) => {
@@ -11,7 +13,7 @@ export class WineList extends Component {
       return null;
     }
     return (
-      <div className="col s12 m6 l3">
+      <div className="col s12 m6 l4 offset-m3 offset-l4">
         <h2 className="center-align">Wines</h2>
         <div className="collection">
           {this.props.wines.map(wine => (
@@ -31,3 +33,4 @@ export class WineList extends Component {
     );
   }
 }
+

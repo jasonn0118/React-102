@@ -5,9 +5,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { WineApp } from './components';
 import './index.css';
+import {BrowserRouter as Router} from "react-router-dom";
+
 
 if (!window.Symbol) {
   window.Symbol = Symbol; // yeah, polyfill all the things !!!
 }
+const root = 
+  window.location.hostname=== 'react-bootcamp.github.io' ? '/react-wines-102-bis/' : '/';
 
-ReactDOM.render(<WineApp />, document.getElementById('root'));
+ReactDOM.render(
+  <Router basename={root}>
+    <WineApp />
+  </Router>,
+  document.getElementById('root'));

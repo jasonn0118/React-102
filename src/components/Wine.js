@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { LikeButton, CommentButton, CommentList } from '.';
+import { LikeButton, CommentButton, CommentList} from '.';
 
 export class Wine extends Component {
   render() {
@@ -7,7 +7,7 @@ export class Wine extends Component {
       return null;
     }
     return (
-      <div className="col s12 m12 l6">
+      <div className="col s12 m6 l4 offset-m3 offset-l4">
         <h2 className="center-align">Wine details</h2>
         <div className="card horizontal">
           <div className="card-image">
